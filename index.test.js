@@ -1,7 +1,7 @@
 const { bubblesort } = require('./index')
 
 describe('dummy test', () => {
-  test('works', () => {
-    console.log('Works')
+  test('bubblesort is a function', () => {
+    expect(typeof bubblesort).toBe('function')
   })
 })
