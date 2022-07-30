@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/skewwhiffy/bubblesort/issues"
   },
-  "homepage": "https://github.com/skewwhiffy/bubblesort#readme"
+  "homepage": "https://github.com/skewwhiffy/bubblesort#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
 }
