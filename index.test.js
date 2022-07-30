@@ -10,7 +10,7 @@ describe('dummy test', () => {
 
     const result = bubblesort(source)
 
-    expect(result).toBe(source)
+    expect(result).toStrictEqual(source)
   })
 
   test('sort works with unsorted array of size 2', () => {
@@ -18,6 +18,6 @@ describe('dummy test', () => {
 
     const result = bubblesort(source)
 
-    expect(result).toBe([1, 2])
+    expect(result).toStrictEqual([1, 2])
   })
 })
