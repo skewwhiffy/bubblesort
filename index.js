@@ -3,18 +3,19 @@ const bubblesort = function(array) {
     return array
   }
   let elementsHaveBeenSwapped = false
-  for (let i = 0; i < array.length - 1; i++) {
-    const firstElement = array[i]
-    const secondElement = array[i + 1]
-    if (firstElement > secondElement) {
-      array[i + 1] = firstElement
-      array[i] = secondElement
-      elementsHaveBeenSwapped = true
+  const pass = array => {
+    for (let i = 0; i < array.length - 1; i++) {
+      const firstElement = array[i]
+      const secondElement = array[i + 1]
+      if (firstElement > secondElement) {
+        array[i + 1] = firstElement
+        array[i] = secondElement
+        return true
+      }
     }
+    return false
   }
-  if (elementsHaveBeenSwapped) {
-    return bubblesort(array)
-  }
+  while(pass(array)) { }
   return array
 }
 
