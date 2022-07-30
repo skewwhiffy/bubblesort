@@ -20,4 +20,13 @@ describe('dummy test', () => {
 
     expect(result).toStrictEqual([1, 2])
   })
+
+  test('sort works with more elements', () => {
+    const source = [5, 1, 4, 2, 8]
+    const expected = [1, 2, 4, 5, 8]
+
+    const result = bubblesort(source)
+
+    expect(result).toStrictEqual(expected)
+  })
 })
