@@ -12,4 +12,12 @@ describe('dummy test', () => {
 
     expect(result).toBe(source)
   })
+
+  test('sort works with unsorted array of size 2', () => {
+    const source = [2, 1]
+
+    const result = bubblesort(source)
+
+    expect(result).toBe([1, 2])
+  })
 })
